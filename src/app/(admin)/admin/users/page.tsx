@@ -32,10 +32,10 @@ export default function UsersAdminPage() {
     const totalPages = Math.ceil(totalUsers / itemsPerPage);
 
     const users: User[] = [
-        { id: '1', name: 'João Silva', email: 'joao@email.com', role: 'User', status: 'Ativo', joinedAt: '12/01/2026' },
-        { id: '2', name: 'Maria Santos', email: 'maria.cultura@empresa.pt', role: 'Promotor', status: 'Ativo', joinedAt: '05/02/2026' },
-        { id: '3', name: 'Admin Principal', email: 'admin@agendacultural.pt', role: 'Admin', status: 'Ativo', joinedAt: '01/01/2026' },
-        { id: '4', name: 'Ricardo Sousa', email: 'ricardo.banned@gmail.com', role: 'User', status: 'Suspenso', joinedAt: '20/02/2026' },
+        { id: '1', name: 'João Silva', email: 'geral@example.com', role: 'User', status: 'Ativo', joinedAt: '12/01/2026' },
+        { id: '2', name: 'Maria Santos', email: 'geral@example.com', role: 'Promotor', status: 'Ativo', joinedAt: '05/02/2026' },
+        { id: '3', name: 'Admin Principal', email: 'geral@example.com', role: 'Admin', status: 'Ativo', joinedAt: '01/01/2026' },
+        { id: '4', name: 'Ricardo Sousa', email: 'geral@example.com', role: 'User', status: 'Suspenso', joinedAt: '20/02/2026' },
     ];
 
     return (
@@ -194,7 +194,7 @@ export default function UsersAdminPage() {
                                 <label className="text-xs font-bold text-gray-400 uppercase ml-1">Email Profissional</label>
                                 <input
                                     type="email"
-                                    placeholder="exemplo@agendacultural.pt"
+                                    placeholder="geral@example.com"
                                     className="w-full px-4 py-3 bg-gray-50 border border-gray-100 rounded-2xl focus:ring-2 focus:ring-indigo-500 outline-none transition-all"
                                 />
                             </div>

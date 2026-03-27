@@ -29,9 +29,9 @@ export default function PromotersAdminPage() {
 
   // Mock de dados seguindo a tua estrutura
   const promoters: Promoter[] = [
-    { id: '1', name: 'Teatro Nacional', email: 'geral@teatro.pt', location: 'Lisboa', status: 'Ativo', totalEvents: 24 },
-    { id: '2', name: 'Artes de Rua CRL', email: 'info@artesrua.com', location: 'Porto', status: 'Pendente', totalEvents: 8 },
-    { id: '3', name: 'Promotora Algarve', email: 'events@algarve.pt', location: 'Faro', status: 'Ativo', totalEvents: 12 },
+    { id: '1', name: 'Teatro Nacional', email: 'geral@example.com', location: 'Lisboa', status: 'Ativo', totalEvents: 24 },
+    { id: '2', name: 'Artes de Rua CRL', email: 'geral@example.com', location: 'Porto', status: 'Pendente', totalEvents: 8 },
+    { id: '3', name: 'Promotora Algarve', email: 'geral@example.com', location: 'Faro', status: 'Ativo', totalEvents: 12 },
   ];
 
   return (

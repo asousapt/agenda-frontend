@@ -1,5 +1,5 @@
 import '../globals.css';
-import AdminSidebar from '@/components/AdminSidebar';
+import AdminSidebar from '/components/AdminSidebar';
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   const navItems = [

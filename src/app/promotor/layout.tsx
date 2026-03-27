@@ -78,7 +78,7 @@ export default function PromotorLayout({ children }: PromotorLayoutProps) {
                             <UserCircle size={24} />
                             <div className="flex-1 min-w-0">
                                 <p className="text-sm font-bold text-gray-900 truncate">Empresa X</p>
-                                <p className="text-xs truncate">promotor@exemplo.com</p>
+                                <p className="text-xs truncate">geral@example.com</p>
 
                             </div>
 
