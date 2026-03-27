@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+    /* Cores Base - Light Mode */
+    --background: #f8fafc; /* Slate 50 (Fundo Admin) */
+    --foreground: #0f172a; /* Slate 900 (Texto) */
+    
+    /* Variáveis de Design do Projeto */
+    --brand-primary: #4f46e5;      /* Indigo 600 */
+    --brand-primary-hover: #4338ca;/* Indigo 700 */
+    --card-bg: #ffffff;
+    --card-border: #f1f5f9;        /* Slate 100 */
+    --input-bg: #f8fafc;
+}
+
+@theme inline {
+    /* Mapeamento de Cores para usar como 'bg-brand' ou 'text-brand' */
+    --color-brand: var(--brand-primary);
+    --color-brand-hover: var(--brand-primary-hover);
+    --color-surface: var(--card-bg);
+    --color-border-subtle: var(--card-border);
+    
+    /* Uniformização de Arredondamentos (Bento Box Style) */
+    --radius-2xl: 1rem;    /* Botões e Inputs */
+    --radius-3xl: 1.5rem;  /* Cards Pequenos */
+    --radius-4xl: 2rem;    /* Cards Grandes e Modais */
+
+    /* Sombras Uniformes */
+    --shadow-bento: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+    --shadow-brand: 0 10px 15px -3px rgba(79, 70, 229, 0.1), 0 4px 6px -4px rgba(79, 70, 229, 0.1);
+}
+
+/* Reset e Estilos Globais */
+body {
+    background: var(--background);
+    color: var(--foreground);
+    @apply antialiased transition-colors duration-200;
+}
+
+/* Classe utilitária para os teus Cards (evita repetir 10 classes) */
+@utility card-bento {
+    @apply bg-surface border border-border-subtle rounded-3xl shadow-bento overflow-hidden;
+}
+
+/* Estilo padrão para Inputs */
+@utility input-bento {
+    @apply w-full px-5 py-4 bg-slate-50 border border-transparent rounded-2xl 
+           focus:bg-white focus:ring-4 focus:ring-brand/10 focus:border-brand 
+           outline-none transition-all font-medium text-slate-700;
+}
